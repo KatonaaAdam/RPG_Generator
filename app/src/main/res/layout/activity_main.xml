@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RadioGroup
+        android:id="@+id/nemGroup"
+        android:layout_width="315dp"
+        android:layout_height="111dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.092">
+
+        <RadioButton
+            android:id="@+id/noRbtn"
+            android:layout_width="match_parent"
+            android:layout_height="46dp"
+            android:onClick="checkBtn"
+            android:text="Nő" />
+
+
+        <RadioButton
+            android:id="@+id/ferfiRbtn"
+            android:layout_width="match_parent"
+            android:layout_height="53dp"
+            android:onClick="checkBtn"
+            android:text="Férfi" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nem:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.022" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Faj:"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.246" />
+
+    <RadioGroup
+        android:id="@+id/fajGroup"
+        android:layout_width="287dp"
+        android:layout_height="306dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/emberRbtn"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:onClick="checkBtn1"
+            android:text="Ember" />
+
+        <RadioButton
+            android:id="@+id/orkRbtn"
+            android:layout_width="291dp"
+            android:layout_height="wrap_content"
+            android:onClick="checkBtn1"
+            android:text="Ork" />
+
+        <RadioButton
+            android:id="@+id/tundeRbtn"
+            android:layout_width="294dp"
+            android:layout_height="wrap_content"
+            android:onClick="checkBtn1"
+            android:text="Tünde" />
+
+        <RadioButton
+            android:id="@+id/lidercRbtn"
+            android:layout_width="296dp"
+            android:layout_height="wrap_content"
+            android:onClick="checkBtn1"
+            android:text="Lidérc" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/generalBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="general"
+        android:text="Generál"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.897"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
